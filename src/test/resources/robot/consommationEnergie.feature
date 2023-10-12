@@ -11,8 +11,9 @@ Feature: Consommation Energie
   Scenario: Charge insuffisante
     Given Le robot est en vol
     When le robot atterrit en coordonnée (6, 5)
-    And le robot se déplace en coordonnée (26, 25)
-    Then les coordonnées du robot sont (6, 5)
+    And le robot se déplace en coordonnée (9, 9)
+    Then la charge du robot est de 0 unités
+    And les coordonnées du robot sont (9, 8)
 
   Scenario: Le robot se recharge
     Given Le robot est en vol
